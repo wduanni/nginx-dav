@@ -1,0 +1,4 @@
+原版dav-ext不能转译[]导致无法显示，和.的隐藏目录，转用 https://github.com/MkfsSion/nginx-dav-ext-module
+第三方库中/被转译导致不正确，合并了pr进自己的库
+
+headers-more-nginx-module： IOS、windows等默认客户端使用COPY、MOVE等方法时，$http_destination中的URI没有带上"/",导致出现无法删除、重命名文件或文件夹等错误，该模块可以修复该错误，兼容更多的客户端
