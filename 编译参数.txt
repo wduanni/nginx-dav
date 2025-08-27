@@ -1,5 +1,6 @@
 ./configure \
   --prefix=/usr/share/nginx \
+  --sbin-path=/usr/sbin/nginx
   --conf-path=/etc/nginx/nginx.conf \
   --http-log-path=/var/log/nginx/access.log \
   --error-log-path=/var/log/nginx/error.log \
@@ -31,5 +32,5 @@
   --with-http_sub_module \
   \
   --with-http_dav_module \
-  --add-module=/root/compileNginx/nginx-dav-ext-module\
-    --add-module=/root/compileNginx/headers-more-nginx-module
+  --add-module=../nginx-dav-ext-module\
+    --add-module=../headers-more-nginx-module
