@@ -1,6 +1,6 @@
 ./configure \
   --prefix=/usr/share/nginx \
-  --sbin-path=/usr/sbin/nginx
+  --sbin-path=/usr/sbin/nginx \
   --conf-path=/etc/nginx/nginx.conf \
   --http-log-path=/var/log/nginx/access.log \
   --error-log-path=/var/log/nginx/error.log \
