@@ -22,8 +22,6 @@ echo "==== [2] 停止并禁用 nginx systemd 服务 ===="
 if systemctl list-unit-files | grep -q '^nginx\.service'; then
     echo "[信息] 停止 nginx 服务..."
     systemctl stop nginx || true
-    echo "[信息] 禁用 nginx 服务开机自启..."
-    systemctl disable nginx || true
 else
     echo "[信息] 未发现 nginx.service，跳过 stop/disable。"
 fi
