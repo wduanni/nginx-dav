@@ -112,6 +112,10 @@ echo "[完成] make 编译完成。"
 echo "==== [9] 执行 make install 安装 nginx ===="
 make install
 echo "[完成] nginx 安装完成。"
+cd ..
+install -m 644 nginx.service /etc/systemd/system/nginx.service && \
+systemctl daemon-reload && \
+systemctl enable nginx
 
 echo "==== [10] 全部步骤执行完毕！===="
 echo "nginx 已按指定参数编译并安装到 /usr/sbin/nginx，配置路径为 /etc/nginx/nginx.conf"
